@@ -1,0 +1,245 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    top: 0;
+}
+body{
+
+
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    scrollbar-width: 1px;
+    background-color: #6a8a83;
+
+    
+}  
+
+header{
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding-left: 5%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    /* border:2px solid black; */
+    height: 80px;
+    box-shadow: 1.4px 3.4px 2.4px hsla(0, 0%, 0%, 0.46);
+    background-color: #6a8a83;
+}
+
+.head-logo {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.nav{
+    display: flex;
+    
+    gap: 25px;  
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: #3D1F1F;
+}
+
+.search{
+    width: 200px;
+    padding-left: 5%;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+    background-color: #DFD3C3;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+
+.search:focus{
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+.search-results {
+    font-family: "oswald";
+    margin-top: 7%;
+    position: fixed; 
+    background-color: #6a8a83;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    list-style: none; 
+    max-height: 200px; 
+    overflow-y: auto; 
+    width: 50%; 
+    z-index: 10;
+}
+
+.search-results li {
+    padding: 10px; 
+    cursor: pointer;
+}
+
+
+
+
+
+.img-cart {
+    
+    height: 55px;
+}
+#cart-toggle-btn{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+   
+    padding: 10px 5px;
+    background-color:#DFD3C3;
+    position: relative;
+    margin-top: 22%;
+    width: 300px;
+    height: auto;
+    color: rgb(8, 4, 4);
+   
+    
+}
+
+.cart h2{
+     text-align: center;
+}
+
+.cart-items {
+    color: rgb(119, 115, 115);
+    font-weight: 100;
+    padding: 10px 5px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.cart-summary {
+    padding: 10px 5px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+
+}
+
+button#checkout-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button#checkout-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.login-page {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px; 
+}
+
+.login-container {
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.login, .register {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #DBB5B5;
+    box-shadow: 10px -7px 11px 1px #34423f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.login {
+
+
+    transform: rotateY(0deg);
+}
+
+.login-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    transform: rotateY(180deg);
+}
+
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    padding: 10px 10px;
+    margin-bottom: 5%;
+}
+
+input:focus {
+    background-color: #C39898;
+    border: none;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.login-btn, .register-btn, .switch-to-login, .switch-to-register {
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    padding: 14px 10px;
+    width: 100px;
+    background-color: #F1E5D1;
+    transition: 0.3s ease-in;
+}
+
+.login-btn:hover, .register-btn:hover, .switch-to-login:hover, .switch-to-register:hover {
+    background-color: #987070;
+}
+
+
+.flipped {
+    transform: rotateY(180deg); 
+}

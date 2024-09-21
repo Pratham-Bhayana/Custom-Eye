@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Flip</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style_for_mobile.css">
+</head>
+
+<header>
+    <div class="head-logo">Custom Eye</div>
+
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <div class="search-bar">
+        <input class="search" id="search-input" placeholder="Search" type="text">
+        <ul id="search-results" class="search-results" style="display: none;"></ul>
+    </div>
+
+    <button id="cart-toggle-btn"><img class="img-cart" src="/images/cart.png"> (0)</button>
+    <button id="menu-toggle-btn">☰</button>
+
+    <section class="cart" id="cart-section" style="display: none;">
+        <h2>Your Cart</h2>
+        <div class="cart-items"></div>
+        <div class="cart-summary">
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p>Total Price: <span id="total-price">$0</span></p>
+            <button id="checkout-btn" disabled>Checkout</button>
+        </div>
+    </section>
+</header>
+<body>
+    <div class="login-page">
+        <div class="login-container">
+            <div class="login">
+                <h2 class="title">LOGIN</h2>
+                <div class="login-details">
+                    <input type="text" class="username" placeholder="username" required>
+                    <input type="password" class="password" placeholder="password" required>
+                    <div class="btn">
+                        <button class="login-btn" type="submit">Login</button>
+                        <button class="switch-to-register" type="button">Register</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="register">
+                <h2 class="title">REGISTER</h2>
+                <div class="register-details">
+                    <input type="text" class="username" placeholder="username" required>
+                    <input type="email" class="email" placeholder="email" required>
+                    <input type="password" class="password" placeholder="password" required>
+                    <div class="btn">
+                        <button class="register-btn" type="submit">Register</button>
+                        <button class="switch-to-login" type="button">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>This is a free for profit individual Project Created by : - <a href="https://frolicking-sunburst-3cbfd6.netlify.app/" >Pratham Bhayana</a></p>
+        <ul class="foot-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://frolicking-sunburst-3cbfd6.netlify.app/projects.html">Pratham Bhayana - Projects</a></li>
+            <li><a href="index.html">T&C</a></li>
+        </ul>
+    </footer>s
+    <script src="login.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById('menu-toggle-btn');
+            const navMenu = document.querySelector('.nav'); 
+        
+            menuBtn.addEventListener('click', function () {
+                navMenu.classList.toggle('active'); 
+                console.log('Menu button clicked');
+            });
+        });
+        </script>
+</body>
+</html>

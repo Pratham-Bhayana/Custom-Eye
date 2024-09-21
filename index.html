@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Custom Eye - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style_for_mobile.css">
+</head>
+<body>
+    <header>
+        <div class="head-logo">Custom Eye</div>
+    
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    
+        <div class="search-bar">
+            <input class="search" id="search-input" placeholder="Search" type="text">
+            <ul id="search-results" class="search-results" style="display: none;"></ul>
+        </div>
+    
+        <button id="cart-toggle-btn"><img class="img-cart" src="/images/cart.png"> (0)</button>
+        <button id="menu-toggle-btn">☰</button>
+    
+        <section class="cart" id="cart-section" style="display: none;">
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Price: <span id="total-price">$0</span></p>
+                <button id="checkout-btn" disabled>Checkout</button>
+            </div>
+        </section>
+    </header>
+    
+<section>
+<div class="slide-preview">
+    <div class="slide-one mySlides">
+        <div class="title">
+            <h2 id="animated-text">Custom Tees</h2>
+        <button class="order-btn">Order Now</button>
+    </div>
+    <div class="img-part">
+        <img class="slide-img-1" src="/images/bg-1.png" alt="bg">
+    </div>
+    </div>
+</div>
+
+<div class="slide-two mySlides">
+    <div class="title-2">
+        <h2 id="text">New Arrivals</h2>
+        <button class="order-btn-2">Shop Now</button>
+    </div>
+    <div class="img-part">
+        <img class="slide-img-2" src="/images/bg-2.png" alt="bg">
+    </div>
+</div>
+
+
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+</section>
+
+<section class="products-itnro">
+    <div class="prod-container">
+        <div class="banner">
+            <img class="ban ban-1" src="/images/BAN-1.png">
+            <button class="view">Quick View</button>
+        </div>
+        <div class="details">
+            <h2>THE SALE IS <br><span>LIVE</span></h2>
+        </div>
+    </div>
+
+    </div>
+
+
+</section>
+<section class="after-horizontal">
+            <div class="items">
+                <div class="items-card">
+                    <img src="/images/item-img-1.png" alt="" class="item-image 1">
+                    <div class="info-det">
+                        <p class="brand">Custom eye</p>
+                        <p class="name">Women's Blue Inner Peace Graphic </p>
+                        <span class="price">$400</span>
+                        <button class="buy">ADD TO CART</button>
+                    </div>
+                 </div>
+            </div>
+</section>
+
+<section id="product-view" class="product-view" style="display: none;">
+    <div class="product-view-content">
+        <span id="close-view" class="close">&times;</span>
+        <img id="view-product-image" src="" alt="Product Image">
+        <div>
+            <h2 id="view-product-name"></h2>
+            <p id="view-product-brand"></p>
+            <p id="view-product-price"></p>
+            <p id="view-product-description">Description...</p>
+            <div class="size-selection">
+                <label for="size-select">Select Size:</label>
+                <select id="size-select">
+                    <option value="S">S</option>
+                    <option value="M"> M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button id="add-to-cart-from-view">ADD TO CART</button>
+                <button id="buy-now-from-view">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="size-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Please select a size</h2>
+        <input type="text" id="size-input" placeholder="e.g., S, M, L" />
+        <button id="confirm-size">Confirm</button>
+    </div>
+</div>
+<footer>
+    <p>This is a free for profit individual Project Created by : - <a href="https://frolicking-sunburst-3cbfd6.netlify.app/" >Pratham Bhayana</a></p>
+    <ul class="foot-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://frolicking-sunburst-3cbfd6.netlify.app/projects.html">Pratham Bhayana - Projects</a></li>
+        <li><a href="index.html">T&C</a></li>
+        <li><a href="index.html">About this project</a></li>
+    </ul>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="home.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById('menu-toggle-btn');
+    const navMenu = document.querySelector('.nav'); 
+
+    menuBtn.addEventListener('click', function () {
+        navMenu.classList.toggle('active'); 
+        console.log('Menu button clicked');
+    });
+});
+</script>
+</html>
