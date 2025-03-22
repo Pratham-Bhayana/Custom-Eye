@@ -798,28 +798,9 @@ font-size: 20px;
     z-index: 1000;
 }
 
-footer{
-margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 2%;
-    gap: 40px;
-    align-items: center;
-
-    height: 80px;
-    box-shadow: -3px -4px 11px -1px rgba(0,0,0,0.75);
-    background-color: #6a8a83;
-}
-
 footer p{
-    margin-top: 5%;
-    font-weight: 200;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-}
-.foot-nav{
-    
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    gap: 40px;
+    text-align: center;
+    color: bisque;
+    margin-top: 12%;
+    padding-top: 2%;
 }
